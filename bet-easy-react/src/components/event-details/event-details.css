@@ -1,0 +1,38 @@
+.theme 
+{
+    background-color: #8935c0;
+}
+.theme-font-color
+{
+    color: #8935c0 !important;
+}
+
+a.button-theme 
+{
+    background-color:#fff;
+    border: 1px solid #8935c0;
+}
+a:hover
+{
+    background-color: #ebedf5 !important;
+    cursor: pointer;
+}
+a:active
+{
+    background-color: #8935c0 !important;
+    color: #fff !important;
+    cursor: pointer;
+    
+}
+svg:active
+{
+    fill:#fff !important;
+}
+p 
+{
+    margin: 0em;
+}
+.text-sm
+{
+    font-size: 0.8em;
+}
