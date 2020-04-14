@@ -1,8 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import EventDetails from './event-details';
+import {configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import { EventDetails } from './event-details';
 
-describe('<EventDetails />', () => {
+configure({ adapter: new Adapter() });
+
+describe('When display EventDetails', () => {
   test('renders', () => {
     const wrapper = shallow(<EventDetails />);
     expect(wrapper).toMatchSnapshot();
