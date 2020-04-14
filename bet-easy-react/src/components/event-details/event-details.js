@@ -4,8 +4,8 @@ import Moment from 'react-moment';
 
 export default class EventDetails extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       bets: []
     }
@@ -71,22 +71,22 @@ AllFilters = () =>
 
 render () {
      return <div className="container">
-              <div className="row"> 
-                { this.BetEasyDisplay() }
-                { this.RacingDisplay() }
-              </div>
+                <div className="row"> 
+                  { this.BetEasyDisplay() }
+                  { this.RacingDisplay() }
+                </div>
                 <div className="row">
                   <div className="col-12 col-lg-3 theme rounded-top">
                     <p className="text-left text-white p-2">Next to Jump</p>
                   </div>
                 </div>
-                <div className="col-12 col-lg-3 px-0 py-0 row">
-                    { this.AllFilters() }
-                </div>
-                <div className="col-12 col-lg-3 px-0 py-0 row">
-                  { this.DisplayBets(this.state.bets) }
-                </div>
-                </div>
+              <div className="col-12 col-lg-3 px-0 py-0 row">
+                { this.AllFilters() }
+              </div>
+              <div className="col-12 col-lg-3 px-0 py-0 row">
+                { this.DisplayBets(this.state.bets) }
+              </div>
+            </div>
   };
 
   componentDidMount() {
